@@ -188,7 +188,6 @@ except Exception as e:
 
 #Crie um algoritmo para consolidar um ou mais arquivos de texto de um diretório.
 import os
-import shutil
 
 def consolidar_arquivos(diretorio, arquivo_destino):
     try:
@@ -287,8 +286,8 @@ def calcular_soma_vendas(vendedores):
             else:
                 vendas_por_vendedor[vendedor[i]] = valor[i]
 
-    print(f"O vendedor que mais vendeu foi {max(vendas_por_vendedor)}.")
-    print(f"O vendedor que menos vendeu foi {min(vendas_por_vendedor)}.")
+    print(f"O vendedor(a) que mais vendeu foi {max(vendas_por_vendedor)}.")
+    print(f"O vendedor(a) que menos vendeu foi {min(vendas_por_vendedor)}.")
 
 vendedores_csv = 'lista2/vendedores.csv' 
 calcular_soma_vendas(vendedores_csv)
