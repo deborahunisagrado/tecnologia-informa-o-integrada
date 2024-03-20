@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "sabonete",
+    "price": 75,
+    "stock": 25
+  },
+  {
+    "id": 1,
+    "name": "sabonete",
+    "price": 75,
+    "stock": 25
+  },
+  {
+    "id": 2,
+    "name": "sabonete",
+    "price": 1,
+    "stock": 25
+  },
+  {
+    "id": 3,
+    "name": "shampoo",
+    "price": 8,
+    "stock": 10
+  }
+]
