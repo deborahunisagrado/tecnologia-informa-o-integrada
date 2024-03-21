@@ -32,6 +32,8 @@ def calc():
         result = num1 * num2
     elif op == '/':
         result = num1 / num2
+        if num2 == 0:
+            result = 'Erro: divisão por zero'
     return jsonify({'result': result})
 
 #Crie uma API para cadastro de usuários, permitindo a inclusão, consulta, atualização e exclusão de usuários.

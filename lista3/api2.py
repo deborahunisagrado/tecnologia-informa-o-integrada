@@ -40,7 +40,7 @@ def create_user():
 @app.route('/users', methods=['GET'])
 def get_users():
     users = load_users()
-    return jsonify(users)
+    return json.dumps(users)
 
 @app.route('/users/<int:user_id>', methods=['GET'])
 def get_user(user_id):
@@ -81,4 +81,4 @@ def delete_user(user_id):
         return jsonify({'error': 'Usuário não encontrado'}), 404
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, host="localhost")
